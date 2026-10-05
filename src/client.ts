@@ -19,11 +19,11 @@ export const DEFAULT_MODEL = MODELS[0].id;
 export const DEFAULT_TEMP = 0.7;
 export const DEFAULT_MAX_TOKENS = 2048;
 
-// API endpoint - overridden per deployment platform
+// API endpoint - configurable per deployment platform
 // Vercel / Cloudflare Pages: /api/chat
-// Netlify: /.netlify/functions/chat
+// Netlify: /.netlify/functions/chat (via environment variable)
 // Local dev: /api/chat (with Vite proxy)
-const API_PATH = "/api/chat";
+const API_PATH = import.meta.env.VITE_API_ENDPOINT || "/api/chat";
 
 export async function chatClient(
   messages: ChatMessage[],

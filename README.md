@@ -144,6 +144,7 @@ vercel --prod
 4. 在 **Site Settings → Build & Deploy → Environment** 設定：
    - `OPENROUTER_KEYS`: 你的多個 API Keys
    - `OPENROUTER_BASE_URL`: `https://openrouter.ai/api/v1`
+   - `VITE_API_ENDPOINT`: `/.netlify/functions/chat`（**重要！**）
 5. 點擊 **Deploy site**
 
 ---
@@ -168,6 +169,7 @@ vercel --prod
 |--------|------|--------|------|
 | `OPENROUTER_KEYS` | ✅ | — | OpenRouter API Keys，逗號分隔 |
 | `OPENROUTER_BASE_URL` | ❌ | `https://openrouter.ai/api/v1` | OpenRouter API 基礎 URL |
+| `VITE_API_ENDPOINT` | ⚠️ | `/api/chat` | API 端點（Netlify 需設為 `/.netlify/functions/chat`） |
 
 ---
 

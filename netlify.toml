@@ -7,9 +7,9 @@
 
 # Netlify Edge Functions
 [[edge_functions]]
-  path = "/api/chat"
+  path = "/.netlify/functions/chat"
   function = "chat"
 
 [build.environment]
   NODE_VERSION = "20"
-  VITE_API_BASE_URL = "/.netlify/functions/chat"
+  VITE_API_ENDPOINT = "/.netlify/functions/chat"
