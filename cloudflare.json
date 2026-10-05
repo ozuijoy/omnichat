@@ -1,0 +1,12 @@
+# Cloudflare Pages Configuration for OmniChat
+# Deploy to: https://dash.cloudflare.com → Pages
+
+[build]
+  command = "npm install && npm run build"
+  publish = "dist"
+
+[build.environment]
+  VITE_API_BASE_URL = "/api/chat"
+
+# API functions are in: cloudflare/functions/api/chat.ts
+# They are automatically served at /api/chat by Cloudflare Pages.
