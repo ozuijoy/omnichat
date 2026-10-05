@@ -175,24 +175,17 @@ vercel --prod
 
 ## 🤖 可用模型清單
 
-| 模型 | 提供者 | 上下文長度 |
-|------|--------|-----------|
-| DeepSeek R1 | DeepSeek | 16K |
-| Llama 4 Maverick | Meta | 128K |
-| Llama 4 Scout | Meta | 128K |
-| Qwen3 235B A2B | Alibaba | 128K |
-| Qwen3 30B A3B | Alibaba | 128K |
-| Mistral Small 3.1 | Mistral AI | 32K |
-| Mistral 7B Instruct | Mistral AI | 8K |
-| Phi 4 Mini | Microsoft | 128K |
-| Phi 4 | Microsoft | 128K |
-| Gemini 2.5 Flash Lite | Google | 1M |
-| Gemma 3 12B IT | Google | 128K |
-| Gemma 3 27B IT | Google | 128K |
-| Nous Hermes 3 8B | Nous Research | 128K |
-| MiniMax M2.1 | MiniMax | 128K |
-| Claude Sonnet 4.5 | Anthropic | 200K |
-| Claude Haiku 4 | Anthropic | 200K |
+| 模型 | 提供者 | 上下文長度 | 說明 |
+|------|--------|-----------|------|
+| Nemotron 3 Ultra 550B | NVIDIA | 1M | 550B MoE (55B active)，Transformer-Mamba 混合架構 |
+| Nemotron 3.5 Lightning | NVIDIA | 256K | 快速推論變體 |
+| Nemotron 3 Super 120B | NVIDIA | 256K | 120B MoE (12B active)，平衡效能與效率 |
+| Apodex 1.1 Mini | Apodex | 128K | 輕量高效能模型 |
+| Qwen 3.8 27B | Alibaba | 128K | 阿里 Qwen 模型，擅長程式與數學 |
+| Ling 3.1 Flash | Inclusion AI | 128K | Inclusion AI 快速模型變體 |
+| Inkling | ThinkingMachines | 128K | ThinkingMachines 推理模型 |
+| Inkling Small | ThinkingMachines | 128K | Inkling 小型變體 |
+| North Mini Code | Cohere | 256K | 30B MoE (3B active)，Apache 2.0 授權，程式專精 |
 
 > 模型清單位於 `shared/models.ts`，可自行新增或移除。
 
